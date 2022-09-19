@@ -1,24 +1,21 @@
-import logo from './logo.svg';
+import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import MainPage from "./pages/MainPage/MainPage";
+import AddNewCard from "./pages/AddNewCard/AddNewCard";
+import Error404 from "./pages/Error404/Error404";
+
 import './App.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Router>
+        <div className="app">
+          <Routes>
+              <Route path='/' element={<MainPage/>}/>
+              <Route path='/add-new-page' element={<AddNewCard/>}/>
+              <Route path='*' element={<Error404/>}/>
+            </Routes>
+        </div>
+      </Router>
   );
 }
 
