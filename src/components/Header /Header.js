@@ -1,9 +1,8 @@
 import './Header.css';
 
-
 function Header() {
   return (
-    <div> Header </div>
+    <div className='header_block'> Header </div>
   );
 }
 
