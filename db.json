@@ -1,0 +1,55 @@
+{
+  "all_pet": [
+    {
+      "id": 1,
+      "name": "Archie",
+      "age": 0.2,
+      "kind": "dog",
+      "description": "Since ancient times, dogs have proudly carried the title of first friend. And to this day, among other friends of man, dogs are number one. It is so ingrained in the mind that it is unlikely that any other animal can take this place."
+    },
+    {
+      "id": 22,
+      "name": "Masya",
+      "age": 1,
+      "kind": "cat",
+      "description": "The presence of a cat in the house relieves stress and fights chronic fatigue, and a soothing purr, akin to meditation or the sounds of nature, helps to fall into a deep sleep and even relieve physical pain."
+    },
+    {
+      "id": 31,
+      "name": "Kesha",
+      "age": 1.2,
+      "kind": "parrot",
+      "description": "Getting a parrot is a great idea, because these birds seem to be made to be kept at home. With all the necessary information, everyone will be able to provide care for a feathered pet, in which the parrot will be healthy and cheerful, and the owner will be happy."
+    }
+  ],
+
+  "dogs": [
+    {
+      "id": 1,
+      "name": "Archie",
+      "age": 0.2,
+      "kind": "dog",
+      "description": "Since ancient times, dogs have proudly carried the title of first friend. And to this day, among other friends of man, dogs are number one. It is so ingrained in the mind that it is unlikely that any other animal can take this place."
+    }
+  ],
+
+  "cats": [
+    {
+      "id": 22,
+      "name": "Masya",
+      "age": 1,
+      "kind": "cat",
+      "description": "The presence of a cat in the house relieves stress and fights chronic fatigue, and a soothing purr, akin to meditation or the sounds of nature, helps to fall into a deep sleep and even relieve physical pain."
+    }
+  ],
+
+  "parrots": [
+    {
+      "id": 31,
+      "name": "Kesha",
+      "age": 1.2,
+      "kind": "parrot",
+      "description": "Getting a parrot is a great idea, because these birds seem to be made to be kept at home. With all the necessary information, everyone will be able to provide care for a feathered pet, in which the parrot will be healthy and cheerful, and the owner will be happy."
+    }
+  ]
+}
