@@ -1,0 +1,6 @@
+.main-block {
+    display: flex;
+    justify-content: space-between;
+    height: calc(100% - 111px);
+    /*height: 100%;*/
+}

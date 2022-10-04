@@ -1,0 +1,75 @@
+.control-block {
+    background:#2b2a29;
+    width: 280px;
+    height: 100%;
+    opacity: 0.75;
+}
+
+.button-list {
+    display: flex;
+    flex-direction: column;
+}
+.button-chevron {
+    position: absolute;
+}
+
+.accordion-item-custom {
+    background: initial;
+}
+
+.accordion-button-custom {
+    background: initial;
+    border: none;
+    color: #e8ae1a;
+    padding: 16px 76px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.accordion-button-custom:hover {
+    background-color: #e8ae1a;
+    color: black;
+}
+
+.accordion-body {
+    background: #2b2a29;
+    border: none;
+}
+
+.accordion-collapse-custom {
+    display: flex;
+    flex-direction: column;
+}
+
+.button-default-list {
+    background: initial;
+    border: none;
+    color: #e8ae1a;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    font-family: Helvetica, Arial, sans-serif;
+
+}
+.button-default-list:hover {
+    background-color: #e8ae1a;
+    color: black;
+
+}
+
+.active {
+    background-color: #e8ae1a;
+    color: black;
+}
+
+
+

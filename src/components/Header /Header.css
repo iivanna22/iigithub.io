@@ -1,4 +1,39 @@
-.header_block {
-    opacity: 1;
+.navbar {
+    position: relative;
     display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.navbar::before {
+    content: "";
+    background: #eae2da;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.75;
+}
+
+.container-header {
+    display: flex;
+    align-items: center;
+}
+
+.log {
+    position: relative;
+    width:80px;
+    height: 80px;
+}
+
+.navbar-text {
+    position: relative;
+    margin-left: 10px;
+    font-size: 70px;
+    font-weight: 600;
+    color: #b0825b;
+    line-height: 0.9;
 }

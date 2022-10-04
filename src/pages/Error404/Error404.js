@@ -1,7 +1,9 @@
-function Error404() {
+import img from './error.jpg';
+
+const Error404 = () => {
   return (
-    <div> Error404 </div>
-  );
+    <img style={{ display: 'block', width: '100%', height: '100%'}}  src={img} alt="Error"/>
+  )
 }
 
 export default Error404;
