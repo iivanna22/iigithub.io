@@ -11,7 +11,9 @@ const MainPage = () => {
       <Header/>
       <div className='main-block'>
         <ControlTab/>
-        <CardsList/>
+        <div className='cards-list-block'>
+          <CardsList/>
+        </div>
       </div>
     </>
   );

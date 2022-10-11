@@ -1,76 +1,98 @@
 import './CardsList.css';
-import { getAllPets } from '../../services/YourPetService'; 
-
-import log from './../../assets/img/wallpaper.jpg'
-import {useEffect, useState } from 'react';
-
-
+import Card from '../Card/Card';
+import {useEffect, useState} from 'react';
+import yourPetService from '../../services/yourPetService';
+import ErrorMessage from '../ErrorMessage/ErrorMessage';
+import Spinner from '../Spinner/Spinner';
+// {getAllPets}
 
 const CardsList = () => {
   const [allPetsState, setAllPetsState] = useState([]);
+  const [newItemLoading, setNewItemLoading] = useState(false);
+  const [activeID, setActiveId] = useState(null);
 
-  const getAllData = async () => {
-    const res = await getAllPets();
-    setAllPetsState(res)
-  }
-  
+
+  const { loading, error, getAllPets, deleteCard} = yourPetService();
+
   useEffect(() => {
-    getAllData();
+    onRequest(true)
+
+    //  getAllData();
 
     // Example Directly
     // axios.get('http://localhost:3000/all_pet').then((resp) => {
     //   const allPets = resp.data;
     //   setAllPetsState(allPets);
     // });
-  }, [])
+  }, [] )
 
-  if (!allPetsState || allPetsState.length === 0) return <p>Нет данных.</p>
+  // const getAllData = async () => {
+  //   const res = await getAllPets2();
+  //   setAllPetsState(res)
+  // }
 
+  const onRequest = (initial) => {
+    initial ? setNewItemLoading(false) :  setNewItemLoading(true);
+    getAllPets()
+      .then(res => {
+        setAllPetsState(res)
+      })
+  }
+
+
+  const handleShow = (id) => {
+    setActiveId(id);
+  }
+
+  const deleteCardMethod = () => {
+    deleteCard(activeID)
+      .then(() => {
+        getAllPets()
+          .then(res => {
+            setAllPetsState(res)
+          })
+      })
+  }
+
+  const errorMessage = error ? <ErrorMessage/> : null;
+  const spinner = loading && !newItemLoading ? <Spinner/> : null;
+
+  const openModal = <div>
+    <div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div className="modal-dialog modal-dialog-centered">
+        <div className="modal-content">
+          <div className="modal-header">
+            <h1 className="modal-title fs-5" id="staticBackdropLabel">Confirmation!</h1>
+            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div className="modal-body">
+            Are you sure you want to delete this card?
+            The data cannot be returned.
+          </div>
+          <div className="modal-footer">
+            <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+            <button onClick={deleteCardMethod} type="button" className="btn btn-primary" data-bs-dismiss="modal">Delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>;
+  
 
   return (
-    <li className='list-card'>
-      <div className='list-card'>
-        {allPetsState.map((resp) =>
-          <div className="card" key={resp.id}>
-            <img src={log} className="bd-placeholder-img card-img-top" width="100%" height="210">
-            </img>
-            <div className="card-body">
-              <div className='card-text'>
-                <h5 className="card-title">{resp.name}</h5>
-                <p className='card-text'> {resp.age}months</p>
-                <p className='card-text'>{resp.kind}</p>
-                <p className='card-text less'>{resp.description}</p>
+    <div>
+      {spinner}
+      {errorMessage}
+      {openModal}
 
-                <div className='icons-card'>
-                  <i className="bi bi-pencil-square icon"></i>
-                  <i className="bi bi-trash3-fill icon"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-        )}
-
-        {/*<div className="card">*/}
-        {/*  <img src={log} className="bd-placeholder-img card-img-top" width="100%" height="210">*/}
-        {/*  </img>*/}
-        
-        {/*  <div className="card-body">*/}
-        {/*    <div className='card-text'>*/}
-        {/*      <h5 className="card-title">Archie</h5>*/}
-        {/*      <p className='card-text'>0.2 months</p>*/}
-        {/*      <p className='card-text'>dog</p>*/}
-        {/*      <p className='card-text less'>Since ancient times, dogs have proudly carried the title of first friend.</p>*/}
-        {/*      <div className='icons-card'>*/}
-        {/*        <i className="bi bi-pencil-square icon"></i>*/}
-        {/*        <i className="bi bi-trash3-fill icon"></i>*/}
-        {/*      </div>*/}
-        {/*    </div>*/}
-        {/*  </div>*/}
-        {/*</div>*/}
-        
-        
-      </div>
-    </li>
+      <li className='list-card'>
+        {
+          allPetsState.map((resp) => {
+            return ( <Card key={resp.id}  getOpenModal={handleShow} item={resp} /> )
+          })
+        }
+      </li>
+    </div>
   );
 }
 

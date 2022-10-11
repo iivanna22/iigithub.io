@@ -1,51 +1,70 @@
 {
   "all_pet": [
     {
-      "id": 1,
+      "id": 45,
+      "picture": "https://upload.wikimedia.org/wikipedia/commons/1/18/Dog_Breeds.jpg",
       "name": "Archie",
       "age": 0.2,
       "kind": "dog",
       "description": "Since ancient times, dogs have proudly carried the title of first friend."
     },
     {
-      "id": 22,
+      "id": 3441,
+      "picture": "https://static.wixstatic.com/media/nsplsh_7a4f4b724e67755a774b6f~mv2_d_6165_4110_s_4_2.jpg/v1/fill/w_2500,h_1666,al_c/nsplsh_7a4f4b724e67755a774b6f~mv2_d_6165_4110_s_4_2.jpg",
+      "name": "Kesha",
+      "age": 1.2,
+      "kind": "parrot",
+      "description": "Getting a parrot is a great idea, because these birds seem to be made to be kept at home. With all the necessary information, everyone will be able to provide care for a feathered pet, in which the parrot will be healthy and cheerful, and the owner will be happy."
+    },
+    {
+      "id": 2123,
+      "picture": "https://cdn.pixabay.com/photo/2017/11/09/21/41/cat-2934720_960_720.jpg",
       "name": "Masya",
       "age": 1,
       "kind": "cat",
       "description": "The presence of a cat in the house relieves stress and fights chronic fatigue, and a soothing purr, akin to meditation or the sounds of nature, helps to fall into a deep sleep and even relieve physical pain."
     },
     {
-      "id": 31,
+      "id": 2123,
+    "picture": "https://cdn.pixabay.com/photo/2017/11/09/21/41/cat-2934720_960_720.jpg",
+    "name": "Masya",
+    "age": 1,
+    "kind": "cat",
+    "description": "The presence of a cat in the house relieves stress and fights chronic fatigue, and a soothing purr, akin to meditation or the sounds of nature, helps to fall into a deep sleep and even relieve physical pain."
+    },
+    {
+      "id": 341,
+      "picture": "https://static.wixstatic.com/media/nsplsh_7a4f4b724e67755a774b6f~mv2_d_6165_4110_s_4_2.jpg/v1/fill/w_2500,h_1666,al_c/nsplsh_7a4f4b724e67755a774b6f~mv2_d_6165_4110_s_4_2.jpg",
       "name": "Kesha",
       "age": 1.2,
       "kind": "parrot",
       "description": "Getting a parrot is a great idea, because these birds seem to be made to be kept at home. With all the necessary information, everyone will be able to provide care for a feathered pet, in which the parrot will be healthy and cheerful, and the owner will be happy."
     }
   ],
-
   "dogs": [
     {
-      "id": 1,
+      "id": 21,
+      "picture": "https://upload.wikimedia.org/wikipedia/commons/1/18/Dog_Breeds.jpg",
       "name": "Archie",
       "age": 0.2,
       "kind": "dog",
       "description": "Since ancient times, dogs have proudly carried the title of first friend. And to this day, among other friends of man, dogs are number one. It is so ingrained in the mind that it is unlikely that any other animal can take this place."
     }
   ],
-
   "cats": [
     {
       "id": 22,
+      "picture": "https://cdn.pixabay.com/photo/2017/11/09/21/41/cat-2934720_960_720.jpg",
       "name": "Masya",
       "age": 1,
       "kind": "cat",
       "description": "The presence of a cat in the house relieves stress and fights chronic fatigue, and a soothing purr, akin to meditation or the sounds of nature, helps to fall into a deep sleep and even relieve physical pain."
     }
   ],
-
   "parrots": [
     {
       "id": 31,
+      "picture": "https://static.wixstatic.com/media/nsplsh_7a4f4b724e67755a774b6f~mv2_d_6165_4110_s_4_2.jpg/v1/fill/w_2500,h_1666,al_c/nsplsh_7a4f4b724e67755a774b6f~mv2_d_6165_4110_s_4_2.jpg",
       "name": "Kesha",
       "age": 1.2,
       "kind": "parrot",

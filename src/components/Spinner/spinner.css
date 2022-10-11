@@ -1,0 +1,13 @@
+.spinner-background {
+    width: 100% ;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.spinner-border {
+    color: #e8ae1a;
+    height: 150px;
+    width: 150px;
+}

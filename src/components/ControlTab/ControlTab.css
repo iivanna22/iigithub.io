@@ -1,7 +1,6 @@
 .control-block {
-    background:#2b2a29;
-    width: 280px;
-    height: 100%;
+    background-color:#2b2a29;
+    width: 20%;
     opacity: 0.75;
 }
 
@@ -9,8 +8,11 @@
     display: flex;
     flex-direction: column;
 }
-.button-chevron {
-    position: absolute;
+
+.button-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .accordion-item-custom {
@@ -37,8 +39,7 @@
 }
 
 .accordion-body {
-    background: #2b2a29;
-    border: none;
+
 }
 
 .accordion-collapse-custom {

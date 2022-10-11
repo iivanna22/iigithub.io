@@ -46,22 +46,21 @@ const  ControlTab = () => {
     <div className='control-block'>
       <div className='button-list'>
         <button type="button" className="button-default">Add new pet</button>
-
-        <div className="accordion accordion-flush accordion-custom" id="accordionFlushExample">
-          <div className="accordion-item  accordion-item-custom ">
-            <div className="accordion-header" id="flush-headingTwo">
-              <div className='button-chevron'>
-                <div>
-                  <button onClick={onChangeFlag} className="collapsed accordion-button-custom" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+      </div>
+      <div className="accordion accordion-flush accordion-custom" id="accordionFlushExample">
+        <div className="accordion-item  accordion-item-custom ">
+          <div className="accordion-header" id="flush-headingTwo">
+            <div className='button-chevron'>
+              <div className="button-wrapper">
+                <button onClick={onChangeFlag} className="collapsed accordion-button-custom" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                           Kind of animal {onRequest()}
-                  </button>
-                </div>
-                <div className="accordion-body">
-                  <div id="flush-collapseTwo" className="accordion-collapse accordion-collapse-custom collapse" aria-labelledby="flush-headingTwo"
-                    data-bs-parent="#accordionFlushExample">
-                    {buttons}
-                  </div>
+                </button>
+              </div>
+              <div className="accordion-body">
+                <div id="flush-collapseTwo" className="accordion-collapse accordion-collapse-custom collapse" aria-labelledby="flush-headingTwo"
+                  data-bs-parent="#accordionFlushExample">
+                  {buttons}
                 </div>
               </div>
             </div>
