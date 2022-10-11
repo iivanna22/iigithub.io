@@ -11,8 +11,8 @@ const CardsList = () => {
   const [newItemLoading, setNewItemLoading] = useState(false);
   const [activeID, setActiveId] = useState(null);
 
-
   const { loading, error, getAllPets, deleteCard} = yourPetService();
+
 
   useEffect(() => {
     onRequest(true)
@@ -30,15 +30,17 @@ const CardsList = () => {
   //   const res = await getAllPets2();
   //   setAllPetsState(res)
   // }
-
-  const onRequest = (initial) => {
-    initial ? setNewItemLoading(false) :  setNewItemLoading(true);
+  const gettingItems = () => {
     getAllPets()
       .then(res => {
         setAllPetsState(res)
       })
   }
-
+  
+  const onRequest = (initial) => {
+    initial ? setNewItemLoading(false) :  setNewItemLoading(true);
+    gettingItems()
+  }
 
   const handleShow = (id) => {
     setActiveId(id);
@@ -47,10 +49,7 @@ const CardsList = () => {
   const deleteCardMethod = () => {
     deleteCard(activeID)
       .then(() => {
-        getAllPets()
-          .then(res => {
-            setAllPetsState(res)
-          })
+        gettingItems()
       })
   }
 

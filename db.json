@@ -25,12 +25,20 @@
       "description": "The presence of a cat in the house relieves stress and fights chronic fatigue, and a soothing purr, akin to meditation or the sounds of nature, helps to fall into a deep sleep and even relieve physical pain."
     },
     {
-      "id": 2123,
-    "picture": "https://cdn.pixabay.com/photo/2017/11/09/21/41/cat-2934720_960_720.jpg",
-    "name": "Masya",
-    "age": 1,
-    "kind": "cat",
-    "description": "The presence of a cat in the house relieves stress and fights chronic fatigue, and a soothing purr, akin to meditation or the sounds of nature, helps to fall into a deep sleep and even relieve physical pain."
+      "id": 212,
+      "picture": "https://cdn.pixabay.com/photo/2017/11/09/21/41/cat-2934720_960_720.jpg",
+      "name": "Masya",
+      "age": 1,
+      "kind": "cat",
+      "description": "The presence of a cat in the house relieves stress and fights chronic fatigue, and a soothing purr, akin to meditation or the sounds of nature, helps to fall into a deep sleep and even relieve physical pain."
+    },
+    {
+      "id": 223,
+      "picture": "https://cdn.pixabay.com/photo/2017/11/09/21/41/cat-2934720_960_720.jpg",
+      "name": "Masya",
+      "age": 1,
+      "kind": "cat",
+      "description": "The presence of a cat in the house relieves stress and fights chronic fatigue, and a soothing purr, akin to meditation or the sounds of nature, helps to fall into a deep sleep and even relieve physical pain."
     },
     {
       "id": 341,
