@@ -2,81 +2,173 @@
   "all_pet": [
     {
       "id": 45,
-      "picture": "https://upload.wikimedia.org/wikipedia/commons/1/18/Dog_Breeds.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/18/Dog_Breeds.jpg",
       "name": "Archie",
-      "age": 0.2,
+      "age": "2022-05",
       "kind": "dog",
-      "description": "Since ancient times, dogs have proudly carried the title of first friend."
+      "description": "The Golden Retriever is a wonderful companion and a true friend of a person who is very attached to his owner and family.",
+      "terms": true
+    },
+    {
+      "id": 28,
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIJzp1O8n47qs1ADl3Xqk617na1Ev_PFnSsg&usqp=CAU",
+      "name": "Joe",
+      "age": "2022-05",
+      "kind": "parrot",
+      "description": " The birds of this breed are tame, easy to learn, talkative individuals with intelligence, ideal for growing in the vicinity of the city, they are easy to care for, they are friendly and loyal to the owner."
+    },
+    {
+      "id": 2102,
+      "url": "https://petsi.net/images/catbreed/big/li-khua.jpg",
+      "name": "Pirate",
+      "age": "2022-04",
+      "kind": "cat",
+      "description": "Possessing high intelligence, they like to observe others, they can open cabinet doors and are well oriented in the area."
+    },
+    {
+      "id": 41,
+      "url": "https://petsi.net/images/dogbreed/big/95.jpg",
+      "name": "Rocky",
+      "age": "2022-08",
+      "kind": "dog",
+      "description": "The Pembroke Welsh Corgi is a cheerful, friendly dog with a high level of energy and is ready to go on an adventure at any moment. Due to their small size, these pets feel great in city apartments, however, the best place for them is a private house with its own garden and the opportunity to walk along the green lawns in the area."
+    },
+    {
+      "id": 42,
+      "url": "https://petsi.net/images/dogbreed/big/25.jpg",
+      "name": "Azu",
+      "age": "2022-04",
+      "kind": "dog",
+      "description": " The Aussie dog breed has an open and very friendly nature, making it an ideal companion for humans. It doesn't matter how old you are - this pet is literally your best friend, period."
+    },
+    {
+      "id": 331,
+      "url": "https://zoocomplex.com.ua/image/catalog/blog/article-id-548/article-id-548-03.jpg",
+      "name": "Sonya",
+      "age": "2022-09",
+      "kind": "parrot",
+      "description": "Due to their well-developed intellect, Corelli is deservedly included in the top ten most intelligent birds, great for keeping at home. According to numerous studies, the intelligence of an adult bird is fully consistent with the mental abilities of a five-year-old child."
+    },
+    {
+      "id": 43,
+      "url": "https://petsi.net/images/dogbreed/big/angliyskiy-fokskhaund.jpg",
+      "name": "Lucy",
+      "age": "2022-03",
+      "kind": "dog",
+      "description": " This breed belongs to large hounds, has a muscular, strong physique, paws of medium length. The English Foxhound is built very harmoniously, and according to many cynologists (especially the British), their physique is close to Greek statues in grace."
+    },
+    {
+      "id": 2103,
+      "url": "https://petsi.net/images/catbreed/big/egeyskaya-koshka.jpg",
+      "name": "Casper",
+      "age": "2021-08",
+      "kind": "cat",
+      "description": "A huge love for water, the ability to swim and hunt both in water and on land, as well as an outstanding intelligence make vans extremely interesting pets."
+    },
+    {
+      "id": 44,
+      "url": "https://petsi.net/images/dogbreed/big/biver-yorkshirskiy-teryer.jpg",
+      "name": "Molly",
+      "age": "2022-05",
+      "kind": "dog",
+      "description": "Biewer York Terrier is, first of all, a companion. It is in this capacity that this breed is valued by people around the world, as their sweet, open and incredibly friendly character can melt the ice in any human heart."
+    },
+    {
+      "id": 46,
+      "url": "https://petsi.net/images/dogbreed/big/127.jpg",
+      "name": "Knopa",
+      "age": "2022-01",
+      "kind": "dog",
+      "description": "The West Highland White Terrier is a very funny, cheerful and cheerful breed. They are also abbreviated and affectionately called - the dog lead. These dogs are always happy to play, they love to fool around and have fun, and for this they do not need company."
+    },
+    {
+      "id": 2101,
+      "url": "https://petsi.net/images/catbreed/big/amerikanskaya-korotkosherstnaya.jpg",
+      "name": "Tsunami",
+      "age": "2022-04",
+      "kind": "cat",
+      "description": "The American Shorthair cat breed combines the best features of domestic cats - kindness, affection, patience and love for people. They are quite smart, not aggressive and not vindictive, they are strongly attached to their owners and feel their emotional state."
+    },
+    {
+      "id": 47,
+      "url": "https://petsi.net/images/dogbreed/big/maltiyskaya-bolonka-malteze.jpg",
+      "name": "David",
+      "age": "2022-02",
+      "kind": "dog",
+      "description": "The Maltese loves people very much and tries to spend as much time as possible with his owners. They are very cheerful, playful, a little silly, love a variety of activities and can rarely sit still."
+    },
+    {
+      "id": 29,
+      "url": "http://images-on-off.com/images/44/volnistiypopugayfotoopisanieobyavleniyao-54715fda.jpg",
+      "name": "Ajax",
+      "age": "2022-06",
+      "kind": "parrot",
+      "description": " Budgerigars have a completely peaceful disposition, they are not subject to destruction, they often behave calmly, although they are not too interesting."
+    },
+    {
+      "id": 2104,
+      "url": "https://petsi.net/images/catbreed/big/shantili-tiffani.jpg",
+      "name": "Naomi",
+      "age": "2021-09",
+      "kind": "cat",
+      "description": "It has a calm, patient character, thanks to which they perfectly find a common language with other pets, if they do not show counter aggression. It also allows you to take children well and not react too violently if the child goes too far with affection. The cat will just leave."
+    },
+    {
+      "id": 48,
+      "url": "https://petsi.net/images/dogbreed/big/10.jpg",
+      "name": "Bailey",
+      "age": "2021-11",
+      "kind": "dog",
+      "description": "The German Shepherd perfectly understands a person, and when it comes to the owner, she often understands him even before he expressed his desire. It takes them some time to introduce a new person into their circle of friends, but if he gets into this circle, the dog will remember him for a long time."
     },
     {
       "id": 3441,
-      "picture": "https://static.wixstatic.com/media/nsplsh_7a4f4b724e67755a774b6f~mv2_d_6165_4110_s_4_2.jpg/v1/fill/w_2500,h_1666,al_c/nsplsh_7a4f4b724e67755a774b6f~mv2_d_6165_4110_s_4_2.jpg",
+      "url": "https://static.wixstatic.com/media/nsplsh_7a4f4b724e67755a774b6f~mv2_d_6165_4110_s_4_2.jpg/v1/fill/w_2500,h_1666,al_c/nsplsh_7a4f4b724e67755a774b6f~mv2_d_6165_4110_s_4_2.jpg",
       "name": "Kesha",
-      "age": 1.2,
+      "age": "2020-07",
       "kind": "parrot",
-      "description": "Getting a parrot is a great idea, because these birds seem to be made to be kept at home. With all the necessary information, everyone will be able to provide care for a feathered pet, in which the parrot will be healthy and cheerful, and the owner will be happy."
+      "description": "Budgerigars are really very noisy and talkative, they perfectly remember and imitate individual words and phrases that are repeated many times, often without much meaning.",
+      "terms": true
     },
     {
-      "id": 2123,
-      "picture": "https://cdn.pixabay.com/photo/2017/11/09/21/41/cat-2934720_960_720.jpg",
-      "name": "Masya",
-      "age": 1,
+      "id": 2108,
+      "url": "https://petsi.net/images/catbreed/big/toybob.jpg",
+      "name": "Valley",
+      "age": "2022-08",
       "kind": "cat",
-      "description": "The presence of a cat in the house relieves stress and fights chronic fatigue, and a soothing purr, akin to meditation or the sounds of nature, helps to fall into a deep sleep and even relieve physical pain."
+      "description": "She is very fond of watching what is happening around, especially sitting on a closet or on another high point. If you live in a private home, be sure that your pet will climb trees and spend time in the garden."
     },
     {
-      "id": 212,
-      "picture": "https://cdn.pixabay.com/photo/2017/11/09/21/41/cat-2934720_960_720.jpg",
-      "name": "Masya",
-      "age": 1,
+      "id": 2109,
+      "url": "https://petsi.net/images/catbreed/big/regdoll.jpg",
+      "name": "Masyanya",
+      "age": "2022-07",
       "kind": "cat",
-      "description": "The presence of a cat in the house relieves stress and fights chronic fatigue, and a soothing purr, akin to meditation or the sounds of nature, helps to fall into a deep sleep and even relieve physical pain."
+      "description": "Ragdoll cats are kind, loyal and very smart creatures that get along well in a family of any size. They are happy to engage in games and entertainment, maintaining playfulness into adulthood."
     },
     {
       "id": 223,
-      "picture": "https://cdn.pixabay.com/photo/2017/11/09/21/41/cat-2934720_960_720.jpg",
-      "name": "Masya",
-      "age": 1,
+      "url": "https://petsi.net/images/catbreed/big/bombeyskaya.jpg",
+      "name": "Leopold",
+      "age": "2021-05",
       "kind": "cat",
-      "description": "The presence of a cat in the house relieves stress and fights chronic fatigue, and a soothing purr, akin to meditation or the sounds of nature, helps to fall into a deep sleep and even relieve physical pain."
+      "description": "These cats combine the grace, grace of a panther, with the softness and kindness of character. They are strongly attached to their family, and love each of its members."
     },
     {
-      "id": 341,
-      "picture": "https://static.wixstatic.com/media/nsplsh_7a4f4b724e67755a774b6f~mv2_d_6165_4110_s_4_2.jpg/v1/fill/w_2500,h_1666,al_c/nsplsh_7a4f4b724e67755a774b6f~mv2_d_6165_4110_s_4_2.jpg",
-      "name": "Kesha",
-      "age": 1.2,
+      "id": 30,
+      "url": "https://zoocomplex.com.ua/image/catalog/blog/article-id-548/article-id-548-05.webp",
+      "name": "Gosh",
+      "age": "2022-06",
       "kind": "parrot",
-      "description": "Getting a parrot is a great idea, because these birds seem to be made to be kept at home. With all the necessary information, everyone will be able to provide care for a feathered pet, in which the parrot will be healthy and cheerful, and the owner will be happy."
-    }
-  ],
-  "dogs": [
+      "description": "The flimsy papugu is swayed by the dzhob, theft by the horny speech, and the shape of the wicked dzhob of the hyzhi birds is bent. At the support of the dzyob of the sagging parrot, the wax with nostrils is well remembered. The bird’s dziob is dry, the upper slit did not grow with the bones of the skull, but is trimmed by the ribs of the bell apparatus, with which the lower slit is richly shorter than the upper one."
+    },
     {
-      "id": 21,
-      "picture": "https://upload.wikimedia.org/wikipedia/commons/1/18/Dog_Breeds.jpg",
-      "name": "Archie",
-      "age": 0.2,
-      "kind": "dog",
-      "description": "Since ancient times, dogs have proudly carried the title of first friend. And to this day, among other friends of man, dogs are number one. It is so ingrained in the mind that it is unlikely that any other animal can take this place."
-    }
-  ],
-  "cats": [
-    {
-      "id": 22,
-      "picture": "https://cdn.pixabay.com/photo/2017/11/09/21/41/cat-2934720_960_720.jpg",
-      "name": "Masya",
-      "age": 1,
+      "id": 2110,
+      "url": "https://petsi.net/images/catbreed/big/avstraliyskaya-dymchataya.jpg",
+      "name": "Zorro",
+      "age": "2021-12",
       "kind": "cat",
-      "description": "The presence of a cat in the house relieves stress and fights chronic fatigue, and a soothing purr, akin to meditation or the sounds of nature, helps to fall into a deep sleep and even relieve physical pain."
-    }
-  ],
-  "parrots": [
-    {
-      "id": 31,
-      "picture": "https://static.wixstatic.com/media/nsplsh_7a4f4b724e67755a774b6f~mv2_d_6165_4110_s_4_2.jpg/v1/fill/w_2500,h_1666,al_c/nsplsh_7a4f4b724e67755a774b6f~mv2_d_6165_4110_s_4_2.jpg",
-      "name": "Kesha",
-      "age": 1.2,
-      "kind": "parrot",
-      "description": "Getting a parrot is a great idea, because these birds seem to be made to be kept at home. With all the necessary information, everyone will be able to provide care for a feathered pet, in which the parrot will be healthy and cheerful, and the owner will be happy."
+      "description": "These are very kind and smart cats. Perhaps their friendliness to others is a genetic personality trait inherited from their ancestors - domestic cats that have grown and developed side by side with people for centuries.."
     }
   ]
 }
