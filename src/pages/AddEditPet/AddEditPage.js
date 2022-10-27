@@ -71,7 +71,7 @@ const PetForm = () => {
   }, [] )
 
   const navigate = useNavigate();
-  const checkUrlId = useMatch('/add-edit-page/:id');
+  const checkUrlId = useMatch('/edit-pet/:id');
 
   const { postPet, getPetData, editPet } = yourPetService();
 

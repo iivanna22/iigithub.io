@@ -10,8 +10,8 @@ const App = () => {
       <div className='app'>
         <Routes>
           <Route path='/' element={<MainPage/>}/>
-          <Route path='/add-edit-page' element={<AddEditPage/>}/>
-          <Route path='/add-edit-page/:id' element={<AddEditPage/>}/>
+          <Route path='/add-new-pet' element={<AddEditPage/>}/>
+          <Route path='/edit-pet/:id' element={<AddEditPage/>}/>
           <Route path='*' element={<Error404Page/>}/>
         </Routes>
       </div>

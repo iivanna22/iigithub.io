@@ -5,7 +5,7 @@ const Card = props => {
   const navigate = useNavigate();
 
   const editCardPet = () => {
-    navigate(`/add-edit-page/${ props.item.id }`, { replace: true });
+    navigate(`/edit-pet/${ props.item.id }`, { replace: true });
   };
 
   return (

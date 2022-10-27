@@ -43,7 +43,7 @@ const  ControlTab = props => {
   return (
     <div className='control-block'>
       <div className='button-list'>
-        <button className='accordion-item-custom'> <NavLink to='/add-edit-page' className="button-add-card" type='button'> Add new pet </NavLink> </button>
+        <button className='accordion-item-custom'> <NavLink to='/add-new-pet' className="button-add-card" type='button'> Add new pet </NavLink> </button>
       </div>
       <div className="accordion accordion-flush accordion-custom" id="accordionFlushExample">
         <div className="accordion-item  accordion-item-custom ">
