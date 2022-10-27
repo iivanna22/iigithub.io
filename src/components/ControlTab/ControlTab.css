@@ -1,50 +1,6 @@
-.control-block {
-    background-color:#2b2a29;
-    width: 20%;
-    opacity: 0.75;
-}
-
-.button-list {
-    display: flex;
-    flex-direction: column;
-}
-
-.button-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.accordion-item-custom {
-    background: initial;
-}
-
-.accordion-button-custom {
-    background: initial;
-    border: none;
-    color: #e8ae1a;
-    padding: 16px 76px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    font-family: Helvetica, Arial, sans-serif;
-}
-
-.accordion-button-custom:hover {
+.active {
     background-color: #e8ae1a;
     color: black;
-}
-
-.accordion-body {
-
-}
-
-.accordion-collapse-custom {
-    display: flex;
-    flex-direction: column;
 }
 
 .button-default-list {
@@ -59,18 +15,74 @@
     margin: 4px 2px;
     transition-duration: 0.4s;
     font-family: Helvetica, Arial, sans-serif;
-
 }
+
 .button-default-list:hover {
     background-color: #e8ae1a;
     color: black;
-
 }
 
-.active {
+.control-block {
+    background-color:#2b2a29;
+    width: 20%;
+    opacity: 0.75;
+}
+
+.button-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.button-add-card {
+    background: initial;
+    border: none;
+    color: #e8ae1a;
+    padding: 16px 104px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.button-add-card:hover {
     background-color: #e8ae1a;
     color: black;
 }
 
+.accordion-item-custom {
+    background: initial;
+    border: none;
+}
 
+.button-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.accordion-button-custom {
+    background: initial;
+    border: none;
+    color: #e8ae1a;
+    padding: 16px 89px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.accordion-button-custom:hover {
+    background-color: #e8ae1a;
+    color: black;
+}
+
+.accordion-collapse-custom {
+    display: flex;
+    flex-direction: column;
+}

@@ -1,12 +1,13 @@
 .main-block {
     display: flex;
     justify-content: space-between;
-    /*height: calc(100% - 120px);*/
+    min-height: 862px;
     height: 100%;
 }
 
 .cards-list-block {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px 20px;
     width: 100%;
 }

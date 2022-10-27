@@ -1,30 +1,34 @@
-import {useRequest} from '../hooks/request.hook';
+import { useRequest } from '../hooks/request.hook';
 
 const yourPetService = () => {
-
   const {loading, request, error, clearError} = useRequest();
+  const basicUrl = 'all_pet/';
+  const urlId = id => {
+    return `all_pet/${id}`
+  };
+  const headersData = { 'Content-Type': 'application/json' };
 
   const getAllPets = async () => {
-    const res = await request('all_pet');
-    return res;
+    return await request( basicUrl );
   }
 
-  const deleteCard = async (id) => {
-    const res = await request(`all_pet/${id}`, 'DELETE');
-    return res;
-
+  const deletePet = async id => {
+    return await request( urlId(id), 'DELETE');
   }
 
+  const postPet = async data => {
+    return await request( basicUrl, 'POST', headersData, data);
+  }
 
-  return {loading, request, error, clearError, getAllPets, deleteCard}
+  const getPetData = async id => {
+    return await request(urlId(id));
+  }
 
+  const editPet = async (id, data) => {
+    return await request(urlId(id), 'PUT', headersData,  data)
+  }
+
+  return { loading, request, error, clearError, getAllPets, deletePet, postPet, getPetData, editPet }
 }
 
 export default yourPetService;
-
-
-// export const getAllPets2 = async () => {
-//   const res = await axios.get(' http://localhost:3000/all_pet');
-//   return res.data;
-// }
-

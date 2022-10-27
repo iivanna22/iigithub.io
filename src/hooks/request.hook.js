@@ -10,24 +10,23 @@ export const useRequest = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  const request = useCallback(async (url, method = 'GET', body = null) => {
-    // headers = {'Content-Type': 'application/json'} not use for  method 'DELETE', only for method 'POST';
+  const request = useCallback(async (url, method = 'GET', headers, body = null) => {
     setLoading(true);
 
     try {
       const response = await api({
         url,
         method,
-        // headers,
+        headers,
         data: body
       })
 
       if (!response) {
-        throw new Error('Error in getting data') ;
+        throw new Error('Error in getting data');
       }
 
       setLoading(false);
-      return response.data
+      return response.data;
 
     } catch (e) {
       setLoading(false);
@@ -39,5 +38,5 @@ export const useRequest = () => {
 
   const clearError = useCallback( () => setError(null), []);
 
-  return {loading, request, error, clearError}
+  return { loading, request, error, clearError }
 }
